@@ -1,0 +1,18 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_question
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_ask_question:
+    - text: "Sure, go ahead and ask your question."
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Can you rephrase?"

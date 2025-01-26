@@ -1,0 +1,18 @@
+version: "3.1"
+
+language: "en"
+
+policies:
+- name: MemoizationPolicy
+- name: RulePolicy
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+- name: EntitySynonymMapper
+- name: ResponseSelector
+- name: FallbackClassifier
+assistant_id: 20250126-212331-large-lemon

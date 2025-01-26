@@ -1,0 +1,17 @@
+version: "3.1"
+
+stories:
+  - story: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: User asks a question
+    steps:
+      - intent: ask_question
+      - action: utter_ask_question
